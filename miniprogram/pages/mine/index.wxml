@@ -1,0 +1,4 @@
+<view class="page">
+  <Navbar title="个人中心">
+  </Navbar>
+</view>

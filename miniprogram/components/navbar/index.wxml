@@ -1,0 +1,17 @@
+<view class="navbar">
+  <view class="navbar-fixed  {{borderBottom ? 'border-bottom':''}} {{bottomShadow ? 'bottom-shadow':''}}" style="background-color: {{backgroundColor}}; padding: {{navbarPaddingTop}}px {{navbarPaddingRight}}px {{navbarPaddingBottom}}px {{navbarPaddingLeft}}px;width: calc(100vw - {{navbarPaddingLeft}}px - {{navbarPaddingRight}}px);">
+    <view class="navbar-inner" style="height: {{navbarHeight}}px;">
+      <view class="left" style="top: {{navbarInnerTop}}px">
+        <image bindtap="goBack" style="width: {{backIconWidth}}; height: {{backIconHeight}};" wx:if="{{showBackIcon}}" src="{{backIcon}}"></image>
+        <text bindtap="goBack" wx:if="{{showBackText}}" style="line-height: {{navbarHeight}}px;color:{{backTextColor}};">{{backText}}</text>
+        <slot name="left"></slot>
+      </view>
+      <view class="title" style="width: calc(100% - {{menuWidth}}px - 30%);line-height: {{navbarHeight}}px;color:{{titleColor}};">{{title}}<slot name="center"></slot>
+      </view>
+    </view>
+    <view id="slot">
+      <slot></slot>
+    </view>
+  </view>
+  <view wx:if="{{fixed}}" class="navbar-height" style="height:{{collapseHeight}}px;"></view>
+</view>

@@ -1,5 +1,5 @@
 <view class="page">
-  <Navbar showBackIcon="{{false}}" title="时搏自助洗车">
+  <Navbar showBackIcon="{{false}}" title="自助洗车">
     <view slot="left">
       <Icon url="../../assets/icons/user.png" bindtap="mine"></Icon>
     </view>

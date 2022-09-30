@@ -1,6 +1,13 @@
+import aMap from "../../libs/amap-wx";
+import Key from "../../config/key";
+
 Page({
   data: {},
-  onLoad() {},
+  onLoad() {
+    this.setData({
+      mapContext: new aMap.AMapWX({ key: Key.GAODE_MAP_KEY }),
+    });
+  },
   onShow() {},
   mine() {
     wx.navigateTo({

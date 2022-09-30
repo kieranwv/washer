@@ -6,7 +6,6 @@
     "include": []
   },
   "miniprogramRoot": "",
-  "compileType": "miniprogram",
   "setting": {
     "useCompilerPlugins": [
       "typescript",
@@ -31,11 +30,12 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {},
-  "srcMiniprogramRoot": "miniprogram/",
+  "srcMiniprogramRoot": "",
   "appid": "wx760e9b2113eef1d9",
   "libVersion": "2.26.2",
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "compileType": "miniprogram"
 }

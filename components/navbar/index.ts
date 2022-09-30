@@ -1,4 +1,4 @@
-import type { IObject } from "../../../typings/app/index.d";
+import type { IObject } from "typings/interface.d";
 
 Component({
   options: { multipleSlots: true },

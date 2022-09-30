@@ -5,8 +5,7 @@
     "ignore": [],
     "include": []
   },
-  "miniprogramRoot": "miniprogram/",
-  "compileType": "miniprogram",
+  "miniprogramRoot": "",
   "setting": {
     "useCompilerPlugins": [
       "typescript",
@@ -21,7 +20,7 @@
     "packNpmRelationList": [
       {
         "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./miniprogram_npm"
+        "miniprogramNpmDistDir": "./"
       }
     ],
     "es6": false,
@@ -31,11 +30,12 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {},
-  "srcMiniprogramRoot": "miniprogram/",
+  "srcMiniprogramRoot": "",
   "appid": "wx760e9b2113eef1d9",
   "libVersion": "2.26.2",
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "compileType": "miniprogram"
 }

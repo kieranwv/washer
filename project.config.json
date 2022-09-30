@@ -21,7 +21,7 @@
     "packNpmRelationList": [
       {
         "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./miniprogram_npm"
+        "miniprogramNpmDistDir": "./"
       }
     ],
     "es6": false,

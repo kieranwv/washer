@@ -9,7 +9,7 @@ Component({
     },
     backIcon: {
       type: String,
-      value: "../../assets/icons/back.png",
+      value: "assets/icons/back.png",
     },
     showBackIcon: {
       type: Boolean,

@@ -50,4 +50,9 @@ Page({
 
   // scan
   scan() {},
+
+  // login
+  login() {
+    
+  },
 });

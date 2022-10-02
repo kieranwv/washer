@@ -14,14 +14,18 @@
   </view>
   <!-- device or car action docs -->
   <view class="action {{isAnimation? 'animation' : ''}}">
-    <view class="item device">
-      <image mode="widthFix" src="/assets/icons/device.png"></image>
-      <text>设备操作手册</text>
+    <view class="bar"></view>
+    <view class="inner">
+      <view class="item device">
+        <image mode="widthFix" src="/assets/icons/device.png"></image>
+        <text>设备操作手册</text>
+      </view>
+      <view class="item device">
+        <image mode="widthFix" src="/assets/icons/car.png"></image>
+        <text>洗车操作手册</text>
+      </view>
     </view>
-    <view class="item device">
-      <image mode="widthFix" src="/assets/icons/car.png"></image>
-      <text>洗车操作手册</text>
-    </view>
+
   </view>
   <!-- scan QR button -->
   <view class="scan">

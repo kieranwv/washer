@@ -10,4 +10,7 @@ export const BaseEnum = {
  */
 export const StorageEnum = {
   OPEN_ID: "open-id",
+  IS_LOGIN: "is-login",
+  COSTOMER_ID: "costomer-id",
+  USER_PROFILE: "user-profile",
 };

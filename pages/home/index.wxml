@@ -1,14 +1,36 @@
 <view class="page">
+  <!-- custom navbar -->
   <Navbar showBackIcon="{{false}}" title="自助洗车">
     <view slot="left">
       <Icon url="../../assets/icons/user.png" bindtap="mine"></Icon>
     </view>
   </Navbar>
-  <van-button type="primary">按钮</van-button>
-  <map>
-    <cover-view slot="callout">
-      <cover-view marker-id="1"></cover-view>
-      <cover-view marker-id="2"></cover-view>
-    </cover-view>
+  <!-- map container -->
+  <map setting="{{mapOptions}}" style="width: 100vw;height: 100vh;">
   </map>
+  <!-- location action -->
+  <view class="location">
+    <image mode="widthFix" src="/assets/icons/location-now.png"></image>
+  </view>
+  <!-- device or car action docs -->
+  <view class="action {{isAnimation? 'animation' : ''}}">
+    <view class="item device">
+      <image mode="widthFix" src="/assets/icons/device.png"></image>
+      <text>设备操作手册</text>
+    </view>
+    <view class="item device">
+      <image mode="widthFix" src="/assets/icons/car.png"></image>
+      <text>洗车操作手册</text>
+    </view>
+  </view>
+  <!-- scan QR button -->
+  <view class="scan">
+    <view class="inner">
+      <view class="button">
+        <image mode="widthFix" src="/assets/icons/scan.png"></image>
+        <text>扫一扫自助洗车</text>
+      </view>
+      <view class="bg"></view>
+    </view>
+  </view>
 </view>

@@ -79,10 +79,6 @@
         width: 45%;
         display: flex;
         align-items: center;
-        .image {
-          width: 88rpx;
-          margin-right: 24rpx;
-        }
         .label {
           .text {
             margin-bottom: 8rpx;
@@ -120,10 +116,6 @@
       .left {
         display: flex;
         align-items: center;
-        .icon {
-          width: 42rpx;
-          margin-right: 24rpx;
-        }
         .label {
           font-size: 30rpx;
           color: #242526;
@@ -136,9 +128,9 @@
           font-size: 28rpx;
           color: rgba(36, 37, 38, 0.6);
           margin-right: 10rpx;
-        }
-        .icon {
-          width: 28rpx;
+          &.orange {
+            color: #ff7733;
+          }
         }
       }
     }

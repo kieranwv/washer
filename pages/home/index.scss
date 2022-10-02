@@ -41,14 +41,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      image {
-        width: 42rpx;
-        margin-right: 12rpx;
-      }
       text {
         color: #fff;
         font-size: 34rpx;
         line-height: 1;
+        padding-bottom: 2rpx;
       }
     }
     .bg {
@@ -106,10 +103,6 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      image {
-        width: 80rpx;
-        margin-bottom: 20rpx;
-      }
       text {
         text-align: center;
         width: 100%;

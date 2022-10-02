@@ -25,7 +25,7 @@
       <view class="title">我的钱包</view>
       <view class="content">
         <view class="item">
-          <image class="image" mode="widthFix" src="/assets/icons/discount.png"></image>
+          <Icon url="/assets/icons/discount.png" size="88rpx" style="margin-right: 24rpx;"></Icon>
           <view class="label">
             <view class="text">
               <text class="num">{{discount ||0}}</text>
@@ -37,7 +37,7 @@
           </view>
         </view>
         <view class="item">
-          <image class="image" mode="widthFix" src="/assets/icons/wallet.png"></image>
+          <Icon url="/assets/icons/wallet.png" size="88rpx" style="margin-right: 24rpx;"></Icon>
           <view class="label">
             <view class="text">
               <text class="num">{{walletNum || 0.00}}</text>
@@ -54,52 +54,54 @@
     <view class="list">
       <view class="item">
         <view class="left">
-          <image mode="widthFix" class="icon" src="/assets/icons/order.png"></image>
+          <Icon url="/assets/icons/order.png" size="42rpx" style="margin-right: 24rpx;"></Icon>
           <view class="label">洗车订单</view>
         </view>
         <view class="right">
           <view class="label">查看全部</view>
-          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+          <Icon url="/assets/icons/more.png" size="28rpx"></Icon>
         </view>
       </view>
       <view class="item">
         <view class="left">
-          <image mode="widthFix" class="icon" src="/assets/icons/message.png"></image>
+          <Icon url="/assets/icons/message.png" size="42rpx" style="margin-right: 24rpx;"></Icon>
           <view class="label">我的消息</view>
         </view>
         <view class="right">
-          <view class="label"></view>
-          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+          <view class="label">
+            
+          </view>
+          <Icon url="/assets/icons/more.png" size="28rpx"></Icon>
         </view>
       </view>
       <view class="item">
         <view class="left">
-          <image mode="widthFix" class="icon" src="/assets/icons/invitation.png"></image>
+          <Icon url="/assets/icons/invitation.png" size="42rpx" style="margin-right: 24rpx;"></Icon>
           <view class="label">邀请有礼</view>
         </view>
         <view class="right">
-          <view class="label"></view>
-          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+          <view class="label orange">免费洗车</view>
+          <Icon url="/assets/icons/more.png" size="28rpx"></Icon>
         </view>
       </view>
       <view class="item">
         <view class="left">
-          <image mode="widthFix" class="icon" src="/assets/icons/question.png"></image>
+          <Icon url="/assets/icons/question.png" size="42rpx" style="margin-right: 24rpx;"></Icon>
           <view class="label">常见问题</view>
         </view>
         <view class="right">
           <view class="label"></view>
-          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+          <Icon url="/assets/icons/more.png" size="28rpx"></Icon>
         </view>
       </view>
       <view class="item">
         <view class="left">
-          <image mode="widthFix" class="icon" src="/assets/icons/service.png"></image>
+          <Icon url="/assets/icons/service.png" size="42rpx" style="margin-right: 24rpx;"></Icon>
           <view class="label">联系客服</view>
         </view>
         <view class="right">
           <view class="label"></view>
-          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+          <Icon url="/assets/icons/more.png" size="28rpx"></Icon>
         </view>
       </view>
     </view>

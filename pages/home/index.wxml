@@ -10,18 +10,18 @@
   </map>
   <!-- 定位按钮 -->
   <view class="location">
-    <image mode="widthFix" src="/assets/icons/location-now.png"></image>
+    <Icon url="/assets/icons/location-now.png" size="120rpx"></Icon>
   </view>
   <!-- 设备和洗车操作手册 -->
   <view class="action {{isAnimation? 'animation' : ''}}">
     <view class="bar"></view>
     <view class="inner">
       <view class="item device">
-        <image mode="widthFix" src="/assets/icons/device.png"></image>
+        <Icon url="/assets/icons/device.png" size="80rpx"></Icon>
         <text>设备操作手册</text>
       </view>
       <view class="item device">
-        <image mode="widthFix" src="/assets/icons/car.png"></image>
+        <Icon url="/assets/icons/car.png" size="80rpx"></Icon>
         <text>洗车操作手册</text>
       </view>
     </view>
@@ -31,7 +31,7 @@
   <view class="scan">
     <view class="inner">
       <view class="button">
-        <image mode="widthFix" src="/assets/icons/scan.png"></image>
+        <Icon url="/assets/icons/scan.png" size="42rpx" style="margin-right: 10rpx;"></Icon>
         <text>扫一扫自助洗车</text>
       </view>
       <view class="bg"></view>

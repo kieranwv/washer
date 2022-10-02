@@ -19,10 +19,7 @@
     "strict": true,
     "strictPropertyInitialization": true,
     "lib": ["ES2020"],
-    "typeRoots": ["./typings"],
-    "paths": {
-      "@vant/weapp/*": ["./node_modules/@vant/weapp/dist/*"]
-    }
+    "typeRoots": ["./typings"]
   },
   "include": ["./**/*.ts"]
 }

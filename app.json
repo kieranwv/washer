@@ -1,4 +1,5 @@
 {
+  "entryPagePath": "pages/home/index",
   "pages": ["pages/home/index", "pages/mine/index"],
   "window": {
     "backgroundTextStyle": "light",

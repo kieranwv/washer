@@ -1,0 +1,114 @@
+.page {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.location {
+  position: fixed;
+  bottom: 640rpx;
+  left: 24rpx;
+  padding: 0;
+  image {
+    width: 120rpx;
+  }
+}
+
+.scan {
+  position: fixed;
+  bottom: 440rpx;
+  height: 120rpx;
+  left: 50%;
+  width: 400rpx;
+  transform: translateX(-50%);
+  .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .button {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      opacity: 1;
+      border-radius: 999rpx;
+      background: linear-gradient(
+        135deg,
+        rgba(77, 151, 255, 1) 0%,
+        rgba(51, 119, 255, 1) 100%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text {
+        color: #fff;
+        font-size: 34rpx;
+        line-height: 1;
+        padding-bottom: 2rpx;
+      }
+    }
+    .bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 9;
+      top: 30rpx;
+      opacity: 0.4;
+      background: rgba(51, 119, 255, 1);
+      filter: blur(40px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}
+
+@keyframes action {
+  0% {
+    bottom: -240rpx;
+  }
+  100% {
+    bottom: 0rpx;
+  }
+}
+
+.action {
+  width: 90vw;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  opacity: 1;
+  border-radius: 40rpx 40rpx 0 0;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  animation: 0.6s action linear;
+  .bar {
+    width: 80rpx;
+    height: 10rpx;
+    opacity: 0.2;
+    border-radius: 999rpx;
+    background: #000000;
+    margin: 24rpx auto;
+  }
+  .inner {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+    height: 200rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      text {
+        text-align: center;
+        width: 100%;
+        font-size: 26rpx;
+        color: #242526;
+      }
+    }
+  }
+}

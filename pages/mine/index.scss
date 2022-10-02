@@ -1,0 +1,138 @@
+.page {
+  position: relative;
+  background-color: #ebeced;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100vw;
+  height: 33vh;
+  opacity: 1;
+  background: linear-gradient(135deg, #4d97ff 0%, #3377ff 100%);
+}
+
+.user {
+  position: absolute;
+  top: 200rpx;
+  padding: 24rpx;
+  width: 100%;
+  box-sizing: border-box;
+  .profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 54rpx;
+    padding: 0 8rpx;
+    box-sizing: border-box;
+    .info {
+      width: 60%;
+      .text {
+        color: #fff;
+        font-size: 44rpx;
+        margin-bottom: 20rpx;
+        .hi {
+          margin-right: 8rpx;
+        }
+      }
+      .description {
+        color: #eee;
+        font-size: 28rpx;
+      }
+    }
+    .avatar {
+      width: 140rpx;
+      height: 140rpx;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 10rpx solid #4d97ff;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      .image {
+        width: 54rpx;
+      }
+    }
+  }
+
+  .wallet {
+    background-color: #fff;
+    padding: 30rpx;
+    border-radius: 24rpx;
+    margin-bottom: 24rpx;
+    .title {
+      font-size: 36rpx;
+      color: #242526;
+      margin-bottom: 24rpx;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .item {
+        padding: 24rpx 0;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        .label {
+          .text {
+            margin-bottom: 8rpx;
+            .num {
+              font-size: 40rpx;
+              color: #242526;
+              font-weight: 600;
+              margin-right: 6rpx;
+            }
+            .unit {
+              font-size: 28rpx;
+              color: #242526;
+              font-weight: 500;
+            }
+          }
+          .description {
+            font-size: 28rpx;
+            color: rgba(36, 37, 38, 0.6);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .list {
+    background-color: #fff;
+    padding: 15rpx 30rpx;
+    border-radius: 24rpx;
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30rpx 0 30rpx 0;
+      .left {
+        display: flex;
+        align-items: center;
+        .label {
+          font-size: 30rpx;
+          color: #242526;
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        .label {
+          font-size: 28rpx;
+          color: rgba(36, 37, 38, 0.6);
+          margin-right: 10rpx;
+          &.orange {
+            color: #ff7733;
+          }
+        }
+      }
+    }
+  }
+}

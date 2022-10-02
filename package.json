@@ -6,10 +6,6 @@
   "keywords": [],
   "author": "",
   "license": "",
-  "dependencies": {
-    "@vant/weapp": "^1.10.5"
-  },
-  "devDependencies": {
-    "miniprogram-api-typings": "^3.6.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

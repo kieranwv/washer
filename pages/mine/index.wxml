@@ -1,4 +1,107 @@
 <view class="page">
-  <Navbar title="个人中心">
+  <!-- 自定义导航栏 -->
+  <Navbar fixed="{{false}}" titleColor="#fff" backgroundColor="rgba(0,0,0,0)" borderBottom="{{false}}" backIcon="../../assets/icons/back-white.png" title="个人中心" backIconHeight="54rpx" backIconWidth="54rpx">
   </Navbar>
+  <!-- 蓝色背景 -->
+  <view class="bg"></view>
+  <!-- 用户 -->
+  <view class="user">
+    <!-- 用户信息 -->
+    <view class="profile">
+      <view class="info">
+        <view class="text">
+          <text class="hi">Hi，</text>
+          <text wx:if="{{isLogin}}">{{userProfile.username}}</text>
+          <text wx:else>请登录</text>
+        </view>
+        <view class="description" wx:if="{{!isLogin}}">您还没有登录，请点击头像登录</view>
+      </view>
+      <view class="avatar">
+        <image class="image" mode="widthFix" src="/assets/icons/user.png"></image>
+      </view>
+    </view>
+    <!-- 我的钱包 -->
+    <view class="wallet">
+      <view class="title">我的钱包</view>
+      <view class="content">
+        <view class="item">
+          <image class="image" mode="widthFix" src="/assets/icons/discount.png"></image>
+          <view class="label">
+            <view class="text">
+              <text class="num">{{discount ||0}}</text>
+              <text class="unit">张</text>
+            </view>
+            <view class="description">
+              <text>优惠卷</text>
+            </view>
+          </view>
+        </view>
+        <view class="item">
+          <image class="image" mode="widthFix" src="/assets/icons/wallet.png"></image>
+          <view class="label">
+            <view class="text">
+              <text class="num">{{walletNum || 0.00}}</text>
+              <text class="unit">元</text>
+            </view>
+            <view class="description">
+              我的钱包
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 设置列表 -->
+    <view class="list">
+      <view class="item">
+        <view class="left">
+          <image mode="widthFix" class="icon" src="/assets/icons/order.png"></image>
+          <view class="label">洗车订单</view>
+        </view>
+        <view class="right">
+          <view class="label">查看全部</view>
+          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image mode="widthFix" class="icon" src="/assets/icons/message.png"></image>
+          <view class="label">我的消息</view>
+        </view>
+        <view class="right">
+          <view class="label"></view>
+          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image mode="widthFix" class="icon" src="/assets/icons/invitation.png"></image>
+          <view class="label">邀请有礼</view>
+        </view>
+        <view class="right">
+          <view class="label"></view>
+          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image mode="widthFix" class="icon" src="/assets/icons/question.png"></image>
+          <view class="label">常见问题</view>
+        </view>
+        <view class="right">
+          <view class="label"></view>
+          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image mode="widthFix" class="icon" src="/assets/icons/service.png"></image>
+          <view class="label">联系客服</view>
+        </view>
+        <view class="right">
+          <view class="label"></view>
+          <image mode="widthFix" class="icon" src="/assets/icons/more.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

@@ -42,22 +42,22 @@
     <tr>
         <td style="width:33%"><img width="100%" src="./.readme/home.jpg"></td>
         <td style="width:33%"><img width="100%" src="./.readme/submit.jpg"></td>
-        <td style="width:33%"><img width="100%" src="./.readme/mine.jpg"></td>
+        <td style="width:33%"><img width="70%" src="./.readme/mine.jpg"></td>
     </tr>
     <tr>
-        <td><img width="100%" src="./.readme/order.jpg"></td>
-        <td><img width="100%" src="./.readme/message.jpg"></td>
-        <td><img width="100%" src="./.readme/discount.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/order.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/message.jpg"></td>
+        <td style="width:33%"><img width="70%" src="./.readme/discount.jpg"></td>
     </tr>
     <tr>
-        <td><img width="100%" src="./.readme/service.jpg"></td>
-        <td><img width="100%" src="./.readme/pay.jpg"></td>
-        <td><img width="100%" src="./.readme/wash.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/service.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/pay.jpg"></td>
+        <td style="width:33%"><img width="70%" src="./.readme/wash.jpg"></td>
     </tr>
     <tr>
-        <td><img width="100%" src="./.readme/no-order.jpg"></td>
-        <td><img width="100%" src="./.readme/no-message.jpg"></td>
-        <td><img width="100%" src="./.readme/no-discount.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/no-order.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/no-message.jpg"></td>
+        <td style="width:33%"><img width="70%" src="./.readme/no-discount.jpg"></td>
     </tr>
 </table>
 

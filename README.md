@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/kaivanwong/we-wash-car" target="_blank">
-    <img width="180" src="./miniprogram/assets/logo.png"/>
+    <img width="180" src="./miniprogram/assets/logo.svg"/>
   </a>
 </div>
 
@@ -40,9 +40,9 @@
 
 <table>
     <tr>
-        <td><img width="100%" src="./.readme/home.jpg"></td>
-        <td><img width="100%" src="./.readme/mine.jpg"></td>
-        <td><img width="100%" src="./.readme/submit.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/home.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/submit.jpg"></td>
+        <td style="width:33%"><img width="100%" src="./.readme/mine.jpg"></td>
     </tr>
     <tr>
         <td><img width="100%" src="./.readme/order.jpg"></td>

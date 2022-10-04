@@ -1,0 +1,49 @@
+.page {
+  position: relative;
+  background-color: #ebeced;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100vw;
+  height: 33vh;
+  opacity: 1;
+  background: linear-gradient(135deg, #4d97ff 0%, #3377ff 100%);
+}
+
+.card {
+  position: absolute;
+  top: 240rpx;
+  padding: 20rpx 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  .inner {
+    background-color: #fff;
+    border-radius: 24rpx;
+    padding: 30rpx;
+    height: 50vh;
+    .title {
+      color: #242526;
+      font-size: 36rpx;
+      margin-bottom: 44rpx;
+      font-weight: bold;
+      text-align: center;
+    }
+    .qr-code {
+      padding-top: 100rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .image {
+        width: 60%;
+      }
+    }
+    .description {
+      padding-top: 100rpx;
+      color: #919599;
+      text-align: center;
+    }
+  }
+}

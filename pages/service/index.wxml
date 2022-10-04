@@ -1,0 +1,19 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar fixed="{{false}}" titleColor="#fff" backgroundColor="rgba(0,0,0,0)" borderBottom="{{false}}" backIcon="../../assets/icons/back-white.png" title="联系客服" backIconHeight="54rpx" backIconWidth="54rpx">
+  </Navbar>
+  <!-- 蓝色背景 -->
+  <view class="bg"></view>
+  <!-- 客服卡片 -->
+  <view class="card">
+    <view class="inner">
+      <view class="title">扫一扫联系客服</view>
+      <view class="qr-code">
+        <image class="image" mode="widthFix" src="/assets/images/qr-code.png"></image>
+      </view>
+      <view class="description">
+        致电客服热线：400-9999-8888
+      </view>
+    </view>
+  </view>
+</view>

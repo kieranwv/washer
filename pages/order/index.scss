@@ -1,0 +1,113 @@
+.page {
+  background: rgba(245, 245, 250, 1);
+  min-height: 100vh;
+}
+
+.list {
+  padding: 30rpx;
+  .item {
+    background-color: #fff;
+    border-radius: 20rpx;
+    overflow: hidden;
+    padding: 30rpx;
+    margin-bottom: 30rpx;
+    .header {
+      padding-bottom: 30rpx;
+      border-bottom: 1px solid #e6e6e6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .status {
+        display: flex;
+        align-items: center;
+        .shape {
+          width: 50rpx;
+          height: 50rpx;
+          border-radius: 8rpx;
+          text-align: center;
+          line-height: 50rpx;
+          font-size: 26 rpx;
+          font-weight: 400;
+          background: linear-gradient(
+            135deg,
+            rgba(77, 151, 255, 1) 0%,
+            rgba(51, 119, 255, 1) 100%
+          );
+          color: #fff;
+          margin-right: 14rpx;
+        }
+        .text {
+          color: #242526;
+          font-size: 34rpx;
+          font-weight: 600;
+        }
+      }
+      .time {
+        color: #7d7979;
+      }
+    }
+    .content {
+      padding: 30rpx 0;
+      .plate {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 30rpx;
+        .name {
+          color: #242526;
+          font-size: 38rpx;
+          font-weight: 500;
+        }
+        .num {
+          color: #242526;
+          font-size: 32rpx;
+          font-weight: 400;
+        }
+      }
+      .location {
+        color: #7d7979;
+        padding-bottom: 30rpx;
+      }
+      .price {
+        color: #ff7733;
+        .unit {
+          font-size: 32rpx;
+          font-weight: 600;
+        }
+        .text {
+          font-size: 38rpx;
+          font-weight: 600;
+        }
+      }
+    }
+    .action {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .btn {
+        border-radius: 999rpx;
+        text-align: center;
+        width: 160rpx;
+        padding: 10rpx 0;
+        font-size: 28rpx;
+        margin-left: 40rpx;
+        &.primary {
+          color: #3377ff;
+          border: 2rpx solid #3377ff;
+        }
+        &.info {
+          color: #242526;
+          border: 2rpx solid #242526;
+        }
+      }
+    }
+  }
+}
+
+.no-data {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

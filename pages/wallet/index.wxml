@@ -1,0 +1,35 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar fixed="{{false}}" titleColor="#fff" backgroundColor="rgba(0,0,0,0)" borderBottom="{{false}}" backIcon="../../assets/icons/back-white.png" title="我的钱包" backIconHeight="54rpx" backIconWidth="54rpx">
+  </Navbar>
+  <!-- 蓝色背景 -->
+  <image class="bg" mode="widthFix" src="/assets/images/wallet-bg.png"></image>
+  <!-- 余额 -->
+  <view class="wallet">
+    <view class="title">钱包余额</view>
+    <view class="num">{{walletNum}}</view>
+  </view>
+  <!-- 列表 -->
+  <view class="history">
+    <view class="inner">
+      <view class="navs">
+        <view class="nav {{currentNav == 0 ? 'active' :''}}" bindtap="changeType">余额存入</view>
+        <view class="nav {{currentNav == 1 ? 'active' :''}}" bindtap="changeType">余额支出</view>
+      </view>
+      <view class="list">
+        <view class="item" wx:for="{{list}}" wx:key="index">
+          <view class="info">
+            <view class="label">{{currentNav == 0 ? '充值' : '洗车'}}</view>
+            <view class="time">{{item.createTime}}</view>
+          </view>
+          <view class="num">{{currentNav == 0 ? '+' : '-'}}{{item.num}}</view>
+        </view>
+        <view class="no-data" wx:if="{{list.length == 0}}">暂无记录</view>
+      </view>
+    </view>
+  </view>
+  <!-- 充值按钮 -->
+  <view class="btn" bindtap="goPay">
+    <text class="text">钱包充值</text>
+  </view>
+</view>

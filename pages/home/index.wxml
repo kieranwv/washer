@@ -1,4 +1,4 @@
-<view class="page">
+<view class="page {{isSelected ? 'selected':''}}">
   <!-- 自定义导航栏 -->
   <Navbar showBackIcon="{{false}}" title="自助洗车">
     <view slot="left">
@@ -6,35 +6,34 @@
     </view>
   </Navbar>
   <!-- 地图区域 -->
-  <map setting="{{mapOptions}}" style="width: 100vw;height: 100vh;">
+  <map id="map" setting="{{mapOptions}}" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" bindmarkertap="markerTap" style="width: 100vw;height: 100vh;">
   </map>
   <!-- 定位按钮 -->
-  <view class="location">
-    <Icon url="/assets/icons/location-now.png" size="120rpx"></Icon>
+  <view class="tool location">
+    <Icon url="/assets/icons/location-now.png" size="52rpx"></Icon>
   </view>
-  <!-- 设备和洗车操作手册 -->
-  <view class="action {{isAnimation? 'animation' : ''}}">
-    <view class="bar"></view>
-    <view class="inner">
-      <view class="item device">
-        <Icon url="/assets/icons/device.png" size="80rpx"></Icon>
-        <text>设备操作手册</text>
-      </view>
-      <view class="item device">
-        <Icon url="/assets/icons/car.png" size="80rpx"></Icon>
-        <text>洗车操作手册</text>
-      </view>
+  <!-- 右侧工具栏 -->
+  <view class="tool service">
+    <view class="item" bindtap="goQuestion">
+      <Icon url="/assets/icons/question.png" size="48rpx"></Icon>
+      <view class="text">手册</view>
     </view>
-
+    <view class="line"></view>
+    <view class="item" bindtap="goService">
+      <Icon url="/assets/icons/service.png" size="48rpx"></Icon>
+      <view class="text">客服</view>
+    </view>
+  </view>
+  <!-- 操作弹窗 -->
+  <view class="action">
+    <view class="bar" bindtap="closeAction"></view>
+    <view class="inner">
+      <view class="title">{{markers[currentSelect].name}}</view>
+      <view class="description">{{markers[currentSelect].address}}</view>
+    </view>
   </view>
   <!-- 扫码按钮 -->
   <view class="scan">
-    <view class="inner">
-      <view class="button">
-        <Icon url="/assets/icons/scan.png" size="42rpx" style="margin-right: 10rpx;"></Icon>
-        <text>扫一扫自助洗车</text>
-      </view>
-      <view class="bg"></view>
-    </view>
+    <BlueButton width='100%' iconUrl="/assets/icons/scan.png" iconStyle="margin-right:20rpx">扫一扫自助洗车</BlueButton>
   </view>
 </view>

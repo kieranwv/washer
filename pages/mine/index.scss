@@ -136,3 +136,16 @@
     }
   }
 }
+
+button {
+  background: none !important;
+  border: none !important;
+  width: auto !important;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+}
+button::after {
+  border: none;
+}

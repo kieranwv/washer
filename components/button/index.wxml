@@ -1,0 +1,7 @@
+<view class="slot" style="width:{{width}};height:{{height}};">
+  <view class="button">
+    <Icon wx:if="{{iconUrl}}" url="{{iconUrl}}" size="{{iconSize}}" style="{{iconStyle}}"></Icon>
+    <slot></slot>
+  </view>
+  <view class="bg"></view>
+</view>

@@ -1,0 +1,41 @@
+.form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  .form-item-label {
+    display: flex;
+    align-items: center;
+    .form-item-label-required {
+      color: #ff7733;
+      margin-right: 8rpx;
+    }
+    .form-item-label-text {
+      color: #242526;
+      font-size: 30rpx;
+    }
+  }
+  .form-item-value {
+    display: flex;
+    align-items: center;
+    padding-top: 4rpx;
+    input {
+      color: #242526;
+      font-size: 30rpx;
+      line-height: 1;
+    }
+    button {
+      width: 220rpx !important;
+      background: linear-gradient(
+        135deg,
+        rgba(77, 151, 255, 1) 0%,
+        rgba(51, 119, 255, 1) 100%
+      );
+      color: #ffffff;
+      font-size: 26rpx;
+      border-radius: 10rpx;
+      text-align: center;
+      margin: 0 !important;
+    }
+  }
+}

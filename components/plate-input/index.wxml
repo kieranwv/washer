@@ -1,0 +1,7 @@
+<view class='slot' catchtap='onFocusTap'>
+  <block wx:for="{{7}}" wx:key="index">
+    <text class="{{plate.length == index? 'item active':'item'}}">{{plate[index]}}</text>
+  </block>
+  <text class="{{(plate.length == 7 || plate.length == 8) ? 'item active':'item'}}" wx:if="{{plate[7]}}">{{plate[7]}}</text>
+  <image class="{{plate.length == 7 ? 'item':'item disabled'}} 'newEnerge'" src='/assets/icons/new-energy.png' wx:if="{{!plate[7]}}"></image>
+</view>

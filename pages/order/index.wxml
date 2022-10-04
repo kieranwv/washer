@@ -1,0 +1,42 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="洗车订单">
+  </Navbar>
+  <!-- 订单列表 -->
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+      <view class="header">
+        <view class="status">
+          <text class="shape">洗</text>
+          <text class="text" wx:if="{{item.status == 0}}">待支付</text>
+          <text class="text" wx:if="{{item.status == 1}}">待开始</text>
+          <text class="text" wx:if="{{item.status == 2}}">进行中</text>
+          <text class="text" wx:if="{{item.status == 3}}">已完成</text>
+        </view>
+        <view class="time">{{item.createTime}}</view>
+      </view>
+      <view class="content">
+        <view class="plate">
+          <view class="name">{{item.plate}}</view>
+          <view class="num">× {{item.num}}</view>
+        </view>
+        <view class="location">{{item.location}}</view>
+        <view class="price">
+          <text class="unit">￥</text>
+          <text class="text">{{item.price}}</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="btn info" wx:if="{{item.status  == 0}}">取消订单</view>
+        <view class="btn primary" wx:if="{{item.status == 0}}">去支付</view>
+        <view class="btn info" wx:if="{{item.status  == 3}}">删除订单</view>
+        <view class="btn primary" wx:if="{{item.status == 3}}">查看详情</view>
+        <view class="btn primary" wx:if="{{item.status == 1 || item.status == 2}}">进入订单</view>
+      </view>
+    </view>
+  </view>
+  <!-- 空状态 -->
+  <view class="no-data">
+    <image class="image" mode="widthFix" src="/assets/images/no-order.png" wx:if="{{list.length == 0}}"></image>
+  </view>
+</view>

@@ -1,5 +1,5 @@
 {
-  "projectname": "sb-wash",
+  "projectname": "we-wash-car",
   "description": "项目配置文件",
   "packOptions": {
     "ignore": [],
@@ -24,7 +24,8 @@
       }
     ],
     "es6": false,
-    "enhance": false
+    "enhance": false,
+    "minifyWXSS": false
   },
   "style": "v2",
   "simulatorType": "wechat",

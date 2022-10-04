@@ -1,0 +1,26 @@
+.docs {
+  padding: 30rpx;
+
+  .car {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100rpx 0;
+  }
+  .item {
+    .title {
+      font-size: 36rpx;
+      color: #242526;
+      margin-bottom: 24rpx;
+      font-weight: 500;
+    }
+    .content {
+      font-size: 28rpx;
+      color: #242526;
+      line-height: 1.8;
+      font-weight: 400;
+      margin-bottom: 48rpx;
+      word-break: break-all;
+    }
+  }
+}

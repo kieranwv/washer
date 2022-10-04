@@ -1,0 +1,68 @@
+<wxs module="filters">
+  var arrayToString = function (value) {
+    if (value) {
+      return value.join('');
+    }
+  }
+  module.exports.arrayToString = arrayToString;
+</wxs>
+
+<view class="{{showPlateKeyboard ? 'show':''}}">
+  <view class="slot" style="padding-bottom:{{bottomSafeArea}}px">
+    <view class="bar">
+      <view class="plate">{{filters.arrayToString(plate)}}</view>
+      <view class="finish" catchtap="onClickFinish">完成</view>
+    </view>
+    <view class="plate-keyboard">
+      <!-- 省份键盘 -->
+      <view wx:if="{{plate.length < 1}}" class="keyboard-provience-panel">
+        <view class="keyboard">
+          <block wx:for="{{keyValue1}}" wx:key="index">
+            <button class="key" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+        </view>
+        <view class="keyboard">
+          <block wx:for="{{keyValue2}}" wx:key="index">
+            <button class="key" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+        </view>
+        <view class="keyboard">
+          <block wx:for="{{keyValue3}}" wx:key="index">
+            <button class="key" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+        </view>
+        <view class="keyboard">
+          <block wx:for="{{keyValue4}}" wx:key="index">
+            <button class="key" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+        </view>
+      </view>
+      <!-- 数字、字母键盘 -->
+      <view wx:else class="keyboard-number-panel">
+        <view class="keyboard">
+          <block wx:for="{{keyNumber}}" wx:key="index">
+            <button class="key" disabled="{{plate.length < 2}}" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+        </view>
+        <view class="keyboard">
+          <block wx:for="{{keyLetterValue1}}" wx:key="index">
+            <button class="key" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+        </view>
+        <view class="keyboard">
+          <block wx:for="{{keyLetterValue2}}" wx:key="index">
+            <button class="key" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+        </view>
+        <view class="keyboard">
+          <block wx:for="{{keyLetterValue3}}" wx:key="index">
+            <button class="key" disabled="{{plate.length < 2 && (item=='港' || item=='澳' || item == '学' || item=='警')}}" catchtap="onClickKey" data-key="{{item}}">{{item}}</button>
+          </block>
+          <button class="delete" catchtap="onClickDelete">
+            <image class='image' mode="widthFix" src='/assets/icons/plate-keyboard-delete.png'></image>
+          </button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,109 @@
+.page {
+  position: relative;
+  .bg {
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+  }
+
+  .absolute {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    .time {
+      padding-top: 50rpx;
+      width: 100%;
+      .timer {
+        color: #eee;
+        font-size: 58rpx;
+        font-weight: bold;
+        text-align: center;
+      }
+      .action {
+        padding-top: 460rpx;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .btn {
+        color: #fff;
+        text-align: center;
+        width: 260rpx;
+        height: 80rpx;
+        line-height: 80rpx;
+        border-radius: 999rpx;
+        font-size: 30rpx;
+        font-weight: 500;
+        &.primary {
+          background: linear-gradient(
+            135deg,
+            rgba(77, 151, 255, 1) 0%,
+            rgba(51, 119, 255, 1) 100%
+          );
+        }
+        &.warn {
+          background: #ff7733;
+        }
+        &.danger {
+          background: rgba(255, 51, 51, 1);
+        }
+      }
+    }
+
+    .title {
+      border-left: 10rpx solid rgba(77, 151, 255, 1);
+      font-size: 36rpx;
+      padding-left: 20rpx;
+      color: #262626;
+      margin-bottom: 34rpx;
+    }
+    .tools {
+      padding-top: 160rpx;
+      .list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 24rpx 0;
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .text {
+            width: 100%;
+            text-align: center;
+            padding-top: 8rpx;
+            color: #262626;
+            font-size: 28rpx;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .device {
+      padding-top: 80rpx;
+      .list {
+        .item {
+          display: flex;
+          align-items: center;
+          padding: 10rpx 0;
+          .label {
+            width: 140rpx;
+            color: #242526;
+            font-size: 30rpx;
+            margin-right: 20rpx;
+          }
+          .value {
+            width: calc(100% - 160rpx);
+            color: #242526;
+            font-size: 28rpx;
+          }
+        }
+      }
+    }
+  }
+}

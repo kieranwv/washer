@@ -1,6 +1,19 @@
 {
   "entryPagePath": "pages/home/index",
-  "pages": ["pages/home/index", "pages/mine/index"],
+  "pages": [
+    "pages/home/index",
+    "pages/mine/index",
+    "pages/message/index",
+    "pages/order/index",
+    "pages/discount/index",
+    "pages/wallet/index",
+    "pages/submit/index",
+    "pages/wash/index",
+    "pages/service/index",
+    "pages/question/index",
+    "pages/pay/index",
+    "pages/detail/index"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -11,6 +24,15 @@
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "Navbar": "./components/navbar/index",
-    "Icon": "./components/icon/index"
-  }
+    "Icon": "./components/icon/index",
+    "BlueButton": "./components/button/index"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取当前定位"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
 }

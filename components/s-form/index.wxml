@@ -1,0 +1,5 @@
+<view class="form">
+  <form bindsubmit="submit">
+    <slot></slot>
+  </form>
+</view>

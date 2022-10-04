@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "sForm": "/components/s-form/index",
+    "sFormItem": "/components/s-form-item/index",
+    "PlateKeyBoard": "/components/plate-keyboard/index",
+    "PlateInput": "/components/plate-input/index"
+  }
+}

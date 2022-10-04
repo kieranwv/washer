@@ -11,8 +11,6 @@ export const getOpenId = async (
   const { code, data } = await GET("/costomer/getOpenId", { code: _code });
   if (code == 0) {
     return data;
-  } else {
-    return "";
   }
 };
 
@@ -29,8 +27,6 @@ export const getPhone = async (
   });
   if (code == 0) {
     return data;
-  } else {
-    return "";
   }
 };
 
@@ -45,8 +41,6 @@ export const getUserProfile = async (
   });
   if (code == 0) {
     return data;
-  } else {
-    return "";
   }
 };
 
@@ -59,7 +53,5 @@ export const saveUserProfile = async (
   const { code, data } = await POST("/costomer/saveUserInfo", _data);
   if (code == 0) {
     return data;
-  } else {
-    return "";
   }
 };

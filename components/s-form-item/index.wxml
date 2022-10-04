@@ -1,0 +1,9 @@
+<view class="form-item">
+  <view class="form-item-label" style="width:{{labelWidth}}">
+    <text class="form-item-label-required" wx:if="{{required}}">*</text>
+    <text class="form-item-label-text">{{label}}</text>
+  </view>
+  <view class="form-item-value" style="width:calc(100% - {{labelWidth}})">
+    <slot></slot>
+  </view>
+</view>

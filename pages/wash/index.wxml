@@ -1,0 +1,53 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="洗车中" bind:getCollapseHeight="getNavbarHeight">
+  </Navbar>
+  <!-- 背景 -->
+  <image class="bg" style="top:{{navbarHeight}}" mode="widthFix" src="/assets/images/washing.png"></image>
+  <view class="absolute" style="top:{{navbarHeight}}">
+    <!-- 计时区 -->
+    <view class="time" wx:if="{{washStatus != 9}}">
+      <view class="timer">
+        {{timerTimeLabel}}
+      </view>
+      <view class="action">
+        <view class="btn primary" bindtap="startWash" wx:if="{{washStatus == 0}}">开始洗车</view>
+        <view class="btn warn" bindtap="stopWash" wx:if="{{washStatus == 1}}">暂停</view>
+        <view class="btn primary" bindtap="goWash" wx:if="{{washStatus == 2}}">继续洗车</view>
+        <view class="btn danger" bindtap="overWash" wx:if="{{washStatus == 1 || washStatus == 2 }}">停止</view>
+      </view>
+    </view>
+    <!-- 工具区 -->
+    <view class="tools">
+      <view class="title">
+        洗车工具
+      </view>
+      <view class="list">
+        <view class="item">
+          <Icon url="/assets/icons/question.png" size="70rpx"></Icon>
+          <text class="text">洗车手册</text>
+        </view>
+      </view>
+    </view>
+    <!-- 设备信息区 -->
+    <view class="device">
+      <view class="title">
+        设备信息
+      </view>
+      <view class="list">
+        <view class="item">
+          <view class="label">设备编号</view>
+          <view class="value">ZHGJ88883742</view>
+        </view>
+        <view class="item">
+          <view class="label">设备名称</view>
+          <view class="value">中海国际自助洗车一号机</view>
+        </view>
+        <view class="item">
+          <view class="label">详细地址</view>
+          <view class="value">李沧区万年泉路8888号</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

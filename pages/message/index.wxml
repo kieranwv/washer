@@ -1,0 +1,21 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="我的消息">
+  </Navbar>
+  <!-- 消息列表 -->
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+      <view class="time">
+        <text class="text">{{item.time}}</text>
+      </view>
+      <view class="card">
+        <view class="title">{{item.title}}</view>
+        <view class="description">{{item.description}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 空状态 -->
+  <view class="no-data">
+    <image class="image" mode="widthFix" src="/assets/images/no-message.png" wx:if="{{list.length == 0}}"></image>
+  </view>
+</view>

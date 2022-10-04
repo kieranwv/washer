@@ -1,0 +1,22 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar fixed="{{false}}" titleColor="#fff" backgroundColor="rgba(0,0,0,0)" borderBottom="{{false}}" backIcon="../../assets/icons/back-white.png" title="钱包充值" backIconHeight="54rpx" backIconWidth="54rpx">
+  </Navbar>
+  <!-- 蓝色背景 -->
+  <view class="bg"></view>
+  <!-- 充值卡片 -->
+  <view class="card">
+    <view class="inner">
+      <view class="title">充值金额</view>
+      <view class="list">
+        <view class="price {{selectIndex == index ? 'select' : ''}}" bindtap="selectPrice" data-index="{{index}}" wx:for="{{priceOps}}" wx:key="index">
+          <text class="text">{{item.price}}</text>
+        </view>
+      </view>
+      <view class="description">
+      这里是描述信息...
+      </view>
+      <BlueButton width="100%">确认充值</BlueButton>
+    </view>
+  </view>
+</view>

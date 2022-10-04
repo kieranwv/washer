@@ -1,0 +1,22 @@
+.slot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .item {
+    border: 2rpx solid #ccc;
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    line-height: 50rpx;
+    align-self: center;
+    font-size: 28rpx;
+    color: #666;
+    &.active {
+      border: 2rpx solid #bf1733;
+    }
+    &.disabled {
+      border: 2rpx dashed #ccc;
+    }
+  }
+}

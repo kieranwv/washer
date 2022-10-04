@@ -1,0 +1,31 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="优惠卷">
+  </Navbar>
+  <!-- 列表 -->
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+      <image class="bg" mode="widthFix" src="/assets/images/discount-bg.png"></image>
+      <view class="inner">
+        <view class="left">
+          <view class="name">
+            <text wx:if="{{item.type == 0}}">免费</text>
+          </view>
+          <view class="description">
+            {{item.description}}
+          </view>
+        </view>
+        <view class="right">
+          <view class="name">{{item.name}}</view>
+          <view class="use">立即使用</view>
+          <view class="time">{{item.time}}</view>
+          <view class="description">{{item.use}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 空状态 -->
+  <view class="no-data">
+    <image class="image" mode="widthFix" src="/assets/images/no-discount.png" wx:if="{{list.length == 0}}"></image>
+  </view>
+</view>

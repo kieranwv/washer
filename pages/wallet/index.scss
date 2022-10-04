@@ -1,0 +1,116 @@
+.page {
+  position: relative;
+  background-color: #ebeced;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100vw;
+}
+
+.wallet {
+  position: absolute;
+  top: 200rpx;
+  padding: 50rpx 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  .title {
+    font-size: 32rpx;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30rpx;
+  }
+  .num {
+    font-size: 54rpx;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.history {
+  position: absolute;
+  top: 440rpx;
+  padding: 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  .inner {
+    background-color: #fff;
+    border-radius: 24rpx;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    .navs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .nav {
+        width: 50%;
+        text-align: center;
+        height: 90rpx;
+        line-height: 90rpx;
+        background: rgba(192, 213, 255, 1);
+        color: #242526;
+        font-size: 32rpx;
+        &.active {
+          background-color: #fff;
+        }
+      }
+    }
+    .list {
+      min-height: 30vh;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30rpx;
+      .info {
+        .label {
+          font-size: 32rpx;
+          color: #242526;
+          width: 500;
+          margin-bottom: 12rpx;
+        }
+        .time {
+          font-size: 26rpx;
+          color: rgba(36, 37, 38, 1);
+        }
+      }
+      .num {
+        font-size: 38rpx;
+        color: #ff7733;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  border-top: 2rpx solid #eee;
+  .text {
+    display: block;
+    padding: 30rpx 60rpx;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgba(51, 119, 255, 1);
+    font-size: 34rpx;
+    font-weight: 500;
+  }
+}
+
+.no-data {
+  height: 30vh;
+  line-height: 30vh;
+  text-align: center;
+  color: #919599;
+}

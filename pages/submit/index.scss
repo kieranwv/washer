@@ -1,0 +1,122 @@
+.page {
+  position: relative;
+  background-color: #ebeced;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  color: rgba(36, 37, 38, 0.8);
+  font-size: 32rpx;
+  margin-bottom: 24rpx;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 24rpx;
+  padding: 20rpx 30rpx;
+}
+
+.device {
+  margin-bottom: 60rpx;
+  .content {
+    .item {
+      padding: 20rpx 0;
+      display: flex;
+      align-items: center;
+      .label {
+        width: 140rpx;
+        color: #242526;
+        font-size: 30rpx;
+        margin-right: 20rpx;
+      }
+      .value {
+        width: calc(100% - 160rpx);
+        color: #242526;
+        font-size: 28rpx;
+      }
+    }
+  }
+}
+
+.user {
+  margin-bottom: 60rpx;
+}
+
+.pay .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+    .text {
+      font-size: 30rpx;
+      margin-left: 10rpx;
+      font-weight: 500;
+    }
+    .num {
+      font-size: 30rpx;
+      font-weight: 600;
+      color: #ff7733;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    .btn {
+      font-size: 30rpx;
+      font-weight: 500;
+      color: #3377ff;
+    }
+  }
+}
+
+.action {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  padding: 24rpx 30rpx;
+  box-sizing: border-box;
+  .inner {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      .label {
+        color: #242526;
+        font-size: 34rpx;
+        margin-right: 4rpx;
+        font-weight: 500;
+      }
+      .price {
+        color: #ff7733;
+        font-size: 34rpx;
+        font-weight: 600;
+      }
+    }
+    .right {
+      width: 300rpx;
+      display: flex;
+      align-items: center;
+      .button {
+        height: 90rpx;
+        border-radius: 999rpx;
+        background: linear-gradient(135deg, #4d97ff 0%, #3377ff 100%);
+        color: #fff;
+        font-size: 32rpx;
+        line-height: 90rpx;
+        padding: 0 80rpx;
+      }
+    }
+  }
+}

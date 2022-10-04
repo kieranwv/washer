@@ -1,0 +1,70 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="开始洗车">
+  </Navbar>
+  <!-- 设备信息 -->
+  <view class="device">
+    <view class="title">洗车设备</view>
+    <view class="content card">
+      <view class="item">
+        <view class="label">设备编号</view>
+        <view class="value">ZHGJ88883742</view>
+      </view>
+      <view class="item">
+        <view class="label">设备名称</view>
+        <view class="value">中海国际自助洗车一号机</view>
+      </view>
+      <view class="item">
+        <view class="label">详细地址</view>
+        <view class="value">李沧区万年泉路8888号</view>
+      </view>
+    </view>
+  </view>
+  <!-- 用户信息 -->
+  <view class="user">
+    <view class="title">用户信息</view>
+    <view class="card form">
+      <sForm>
+        <sFormItem label="手机号" required>
+          <input type="number" placeholder="请输入手机号" />
+          <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+        </sFormItem>
+        <sFormItem label="车牌号" required>
+          <PlateInput plate="{{plate}}" style="width: 100%;" bind:focus="openPlateKeyboard"></PlateInput>
+        </sFormItem>
+      </sForm>
+    </view>
+  </view>
+  <!-- 支付方式 -->
+  <view class="pay">
+    <view class="title">钱包支付</view>
+    <view class="card content">
+      <view class="left">
+        <Icon url="/assets/icons/wallet-pay.png" size="54rpx"></Icon>
+        <text class="text">余额：</text>
+        <text class="num">{{walletNum}}</text>
+      </view>
+      <view class="right">
+        <text class="btn" bindtap="goPay">余额不足？去充值</text>
+      </view>
+    </view>
+  </view>
+  <!-- 优惠卷 -->
+  <view class="discount">
+
+  </view>
+  <!-- 操作按钮 -->
+  <view class="action">
+    <view class="inner">
+      <view class="left">
+        <view class="label">支付：</view>
+        <view class="price">{{price}}</view>
+      </view>
+      <view class="right">
+        <BlueButton width='300rpx'>马上启动</BlueButton>
+      </view>
+    </view>
+  </view>
+  <!-- 车牌号输入法 -->
+  <PlateKeyBoard showPlateKeyboard="{{isShowKeyboard}}" plate="{{plate}}" bind:change="plateChange"></PlateKeyBoard>
+</view>

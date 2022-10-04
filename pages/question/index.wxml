@@ -1,0 +1,17 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="操作手册">
+  </Navbar>
+  <!-- 内容 -->
+  <view class="docs">
+  <view class="car">
+    <image mode="widthFix" src="/assets/images/car.png"></image>
+  </view>
+    <view class="item" wx:for="{{docs}}" wx:key="index">
+      <view class="title">{{item.title}}</view>
+      <view class="content">
+        {{item.content}}
+      </view>
+    </view>
+  </view>
+</view>

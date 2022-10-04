@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/kaivanwong/we-wash-car" target="_blank">
-    <img width="180" src="./miniprogram/assets/logo.svg"/>
+    <img width="180" src="./assets/logo.svg"/>
   </a>
 </div>
 

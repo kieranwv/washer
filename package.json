@@ -1,6 +1,6 @@
 {
   "name": "we-wash-car",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于微信小程序自助洗车页面模板，内嵌地图定位、订单、消息、洗车、个人中心等模块，采用 TypeScript 工程化开发，提供封装的网络请求及相关工具函数。",
   "scripts": {},
   "keywords": [],

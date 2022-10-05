@@ -13,10 +13,17 @@ Page({
     // 钱包余额
     walletNum: 0,
   },
-  async onLoad() {},
+  async onShow() {
+    this.setData({
+      isLogin: wx.getStorageSync(StorageEnum.IS_LOGIN),
+      userProfile: wx.getStorageSync(StorageEnum.USER_PROFILE),
+      costomerId: wx.getStorageSync(StorageEnum.COSTOMER_ID),
+    });
+  },
 
   // 登录
   async login() {
+    if (this.data.isLogin) return;
     const res: LoginResponse = await wxLogin();
     if (res.status == 0) {
       this.setData({

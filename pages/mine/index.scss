@@ -53,6 +53,11 @@
       align-items: center;
       justify-content: center;
       background-color: #fff;
+      &.scale{
+        .image{
+          width: 100%;
+        }
+      }
       .image {
         width: 54rpx;
       }

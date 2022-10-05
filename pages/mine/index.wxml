@@ -7,17 +7,18 @@
   <!-- 用户 -->
   <view class="user">
     <!-- 用户信息 -->
-    <view class="profile">
+    <view class="profile" bindtap="login">
       <view class="info">
         <view class="text">
           <text class="hi">Hi，</text>
-          <text wx:if="{{isLogin}}">{{userProfile.username}}</text>
+          <text wx:if="{{isLogin}}">{{userProfile.nickName}}</text>
           <text wx:else>请登录</text>
         </view>
         <view class="description" wx:if="{{!isLogin}}">您还没有登录，请点击头像登录</view>
+        <view class="description" wx:else>欢迎回来</view>
       </view>
-      <view class="avatar">
-        <image class="image" mode="widthFix" src="/assets/icons/user.png"></image>
+      <view class="avatar {{isLogin ? 'scale' : ''}}">
+        <image class="image" mode="widthFix" src="{{userProfile.avatarUrl || '/assets/icons/user.png'}}"></image>
       </view>
     </view>
     <!-- 我的钱包 -->

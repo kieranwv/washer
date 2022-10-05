@@ -1,0 +1,8 @@
+<view class="slot">
+  <view class="inner" wx:for="{{docs}}" wx:key="index">
+    <view class="title">{{item.title}}</view>
+    <view class="content">
+      {{item.content}}
+    </view>
+  </view>
+</view>

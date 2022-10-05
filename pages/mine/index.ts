@@ -1,16 +1,31 @@
+import type { IObject, LoginResponse } from 'typings/interface.d';
 import { StorageEnum } from '../../config/enums';
+import { wxLogin } from '../../utils/user';
+
 Page({
   data: {
     // 是否登录
-    isLogin: false,
+    isLogin: wx.getStorageSync(StorageEnum.IS_LOGIN),
     // 用户信息
-    userProfile: {
-      username: '',
-    },
+    userProfile: wx.getStorageSync(StorageEnum.USER_PROFILE),
+    // 用户 id
+    costomerId: wx.getStorageSync(StorageEnum.COSTOMER_ID),
     // 钱包余额
     walletNum: 0,
   },
-  onLoad() {},
+  async onLoad() {},
+
+  // 登录
+  async login() {
+    const res: LoginResponse = await wxLogin();
+    if (res.status == 0) {
+      this.setData({
+        isLogin: true,
+        userProfile: res.profile as IObject,
+        costomerId: res.costomerId as string,
+      });
+    }
+  },
 
   // 跳转我的优惠卷
   goDiscount() {

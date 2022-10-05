@@ -1,0 +1,17 @@
+.slot {
+  padding: 30rpx;
+  .title {
+    font-size: 36rpx;
+    color: #242526;
+    margin-bottom: 24rpx;
+    font-weight: 500;
+  }
+  .content {
+    font-size: 28rpx;
+    color: #242526;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-bottom: 48rpx;
+    word-break: break-all;
+  }
+}

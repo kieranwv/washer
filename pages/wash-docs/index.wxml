@@ -1,0 +1,7 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="洗车操作手册">
+  </Navbar>
+  <!-- 内容 -->
+  <Docs docs="{{docs}}"></Docs>
+</view>

@@ -1,11 +1,19 @@
 import TencentMap from '../../libs/qqmap-wx-jssdk.min.js';
 import Map from '../../config/map';
-import type { IObject } from 'typings/interface';
+import type { IObject, LoginResponse } from 'typings/interface';
 import { getLocation } from '../../utils/location';
 import { StorageEnum } from '../../config/enums';
+import { wxLogin } from '../../utils/user';
+import { getUserProfile } from '../../apis/costomer';
 
 Page({
   data: {
+    // 是否登录
+    isLogin: wx.getStorageSync(StorageEnum.IS_LOGIN),
+    // 用户信息
+    userProfile: wx.getStorageSync(StorageEnum.USER_PROFILE),
+    // 用户 id
+    costomerId: wx.getStorageSync(StorageEnum.COSTOMER_ID),
     // 地图实例
     mapCtx: wx.createMapContext('map'),
     // 是否选中地图上的点
@@ -64,10 +72,20 @@ Page({
     currentSelect: 0,
   },
   async onLoad() {
+    // 初始化定位
     this.setData({
       mapContext: new TencentMap({ key: Map.TENCENT_MAP_API_KEY }),
     });
     this.locationNow();
+    // 获取用户信息
+    const costomerId = wx.getStorageSync(StorageEnum.COSTOMER_ID);
+    const res = await getUserProfile(costomerId);
+    wx.setStorageSync(StorageEnum.USER_PROFILE, res);
+    this.setData({
+      userProfile: res as IObject,
+      isLogin: wx.getStorageSync(StorageEnum.IS_LOGIN),
+      costomerId: costomerId,
+    });
   },
   onShow() {},
 
@@ -113,7 +131,30 @@ Page({
   },
 
   // 扫码洗车
-  scan() {},
+  async scan() {
+    if (!this.data.isLogin) {
+      const res: LoginResponse = await wxLogin();
+      if (res.status == 0) {
+        this.setData({
+          isLogin: true,
+          userProfile: res.profile as IObject,
+          costomerId: res.costomerId as string,
+        });
+        this.wxScan();
+      }
+    } else {
+      this.wxScan();
+    }
+  },
+
+  // 扫码主方法
+  wxScan() {
+    wx.scanCode({
+      success(res) {
+        console.log(res);
+      },
+    });
+  },
 
   // 跳转操作手册
   goQuestion() {

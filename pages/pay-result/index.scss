@@ -1,0 +1,14 @@
+.page {
+  position: relative;
+  background-color: #ebeced;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100vw;
+  height: 33vh;
+  opacity: 1;
+  background: linear-gradient(135deg, #4d97ff 0%, #3377ff 100%);
+}

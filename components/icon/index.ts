@@ -5,9 +5,17 @@ Component({
     },
     size: {
       type: String,
-      value: "34rpx",
+      value: '34rpx',
     },
   },
-  data: {},
-  methods: {},
+  data: {
+    isLoad: false,
+  },
+  methods: {
+    imageLoad() {
+      this.setData({
+        isLoad: true,
+      });
+    },
+  },
 });

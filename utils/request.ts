@@ -1,13 +1,13 @@
+import type { IObject, ResponseData } from '../typings/interface.d';
 import { REQUEST_URL, TENCENT_MAP_URL } from '../config/url';
 import { BaseEnum } from '../config/enums';
-import type { IObject, ResponseData } from '../typings/interface.d';
 
 /**
  * 导出 get 请求
  */
 export const GET = <T>(
   _url: string,
-  _data: IObject
+  _data?: IObject
 ): Promise<ResponseData<T> | undefined | any> => {
   return new Promise(function (resolve, reject) {
     wx.request({

@@ -1,3 +1,3 @@
 <view class="icon" style="width: {{size}};">
-  <image mode="widthFix" src="{{url}}"></image>
+  <image mode="widthFix" src="{{url}}" bindload="imageLoad"></image>
 </view>

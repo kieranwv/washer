@@ -1,0 +1,7 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar fixed="{{false}}" titleColor="#fff" backgroundColor="rgba(0,0,0,0)" borderBottom="{{false}}" backIcon="../../assets/icons/back-white.png" title="邀请有礼" backIconHeight="54rpx" backIconWidth="54rpx">
+  </Navbar>
+  <!-- 蓝色背景 -->
+  <view class="bg"></view>
+</view>

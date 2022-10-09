@@ -95,6 +95,6 @@
 |-- tsconfig.json # ts 配置
 ```
 
-### 开源协议
+### 🧣 开源协议
 
 [MIT licensed](./LICENSE) © 2022-PRESENT Kaivan Wong

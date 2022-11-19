@@ -59,6 +59,9 @@
         <td style="width:33%"><img width="100%" src="./.readme/no-message.jpg"></td>
         <td style="width:33%"><img width="70%" src="./.readme/no-discount.jpg"></td>
     </tr>
+    <tr>
+        <td style="width:33%"><img width="100%" src="./.readme/discount-exchange.jpg"></td>
+    </tr>
 </table>
 
 ### 🌈 使用

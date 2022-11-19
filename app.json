@@ -12,7 +12,8 @@
     "pages/service/index",
     "pages/question/index",
     "pages/pay/index",
-    "pages/detail/index"
+    "pages/detail/index",
+    "pages/exchange/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

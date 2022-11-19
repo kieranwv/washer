@@ -28,4 +28,8 @@
   <view class="no-data">
     <image class="image" mode="widthFix" src="/assets/images/no-discount.png" wx:if="{{list.length == 0}}"></image>
   </view>
+  <!-- 兑换码 -->
+  <view class="btn" bindtap="goExchange">
+    <text class="text">兑换优惠卷</text>
+  </view>
 </view>

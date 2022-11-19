@@ -152,6 +152,9 @@ Page({
     wx.scanCode({
       success(res) {
         console.log(res);
+        wx.navigateTo({
+          url: '/pages/submit/index',
+        });
       },
     });
   },

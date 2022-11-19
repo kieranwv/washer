@@ -11,7 +11,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/wash/index",
+          "pathName": "pages/submit/index",
           "query": "",
           "launchMode": "default",
           "scene": null

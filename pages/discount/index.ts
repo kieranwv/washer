@@ -14,4 +14,11 @@ Page({
   onLoad() {},
   onShow() {},
   onReachBottom() {},
+
+  // 兑换优惠卷
+  goExchange() {
+    wx.navigateTo({
+      url: '/pages/exchange/index',
+    });
+  },
 });

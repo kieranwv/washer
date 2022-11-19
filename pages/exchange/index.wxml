@@ -1,0 +1,35 @@
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <Navbar title="兑换优惠卷">
+  </Navbar>
+  <!-- 橙色背景 -->
+  <view class="bg">
+    <view class="title">
+      <view class="title-1">兑换优惠卷啦</view>
+      <view class="title-2">EXCHANGE</view>
+    </view>
+    <image class="image" mode="widthFix" src="/assets/images/exchange-discount.png"></image>
+  </view>
+  <!-- 卡片 -->
+  <view class="card">
+    <view class="inner">
+      <view class="title">
+        兑换优惠
+      </view>
+      <view class="form">
+        <input placeholder-class="input-placeholder" type="text" placeholder="请输入兑换码" />
+      </view>
+      <view class="action">
+        <BlueButton width='100%'>立即兑换</BlueButton>
+      </view>
+      <view class="title">
+        兑换说明
+      </view>
+      <view class="description">
+        <view class="text">1.兑换码只能兑换一次，并在有效期内兑换</view>
+        <view class="text">2.自动识别兑换成相应的优惠券</view>
+        <view class="text">3.兑换的产品不支持退款，只能用于消费</view>
+      </view>
+    </view>
+  </view>
+</view>

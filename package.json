@@ -1,11 +1,11 @@
 {
-  "name": "we-wash-car",
-  "version": "1.0.3",
-  "description": "基于微信小程序自助洗车页面模板，内嵌地图定位、订单、消息、洗车、个人中心等模块，采用 TypeScript 工程化开发，提供封装的网络请求及相关工具函数。",
-  "scripts": {},
-  "keywords": [],
+  "name": "wash-car-weapp",
+  "version": "1.0.4",
+  "description": "扫码自助洗车 - 微信小程序，基于微信小程序 + TypeScript 搭建，提供地图定位、订单、消息、洗车、个人中心等页面模板",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wingscloud/rbac-admin-web.git"
+  },
   "author": "Kaivan Wong",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "license": "MIT"
 }

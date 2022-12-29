@@ -1,28 +1,45 @@
-<div align="center">
-  <a href="https://github.com/kaivanwong/we-wash-car" target="_blank">
-    <img width="180" src="./assets/logo.svg"/>
-  </a>
-</div>
+# 🚙🚙🚙 Wash Car Weapp
 
-<div align="center">
-  <h1>weWashCar 自助洗车</h1>
-  <div>
-  
-  基于微信小程序自助洗车页面模板，内嵌地图定位、订单、消息、洗车、个人中心等模块，采用 TypeScript 工程化开发，提供封装的网络请求及相关工具函数。
+扫码自助洗车 - 微信小程序，基于微信小程序 + TypeScript 搭建，提供地图定位、订单、消息、洗车、个人中心等页面模板
 
-[![license](https://img.shields.io/github/license/kaivanwong/we-wash-car)](./LICENSE)
-[![github](https://img.shields.io/github/package-json/v/kaivanwong/we-wash-car)](https://github.com/kaivanwong/we-wash-car)
+<table>
+  <tr>
+    <td colspan="3"> <img width="100%" src="./.readme/banner.svg"></td>
+  </tr>
+  <tr>
+    <td style="width:33%"><img width="100%" src="./.readme/home.jpg"></td>
+    <td style="width:33%"><img width="100%" src="./.readme/submit.jpg"></td>
+    <td style="width:33%"><img width="70%" src="./.readme/mine.jpg"></td>
+  </tr>
+  <tr>
+    <td style="width:33%"><img width="100%" src="./.readme/order.jpg"></td>
+    <td style="width:33%"><img width="100%" src="./.readme/message.jpg"></td>
+    <td style="width:33%"><img width="70%" src="./.readme/discount.jpg"></td>
+  </tr>
+  <tr>
+    <td style="width:33%"><img width="100%" src="./.readme/service.jpg"></td>
+    <td style="width:33%"><img width="100%" src="./.readme/pay.jpg"></td>
+    <td style="width:33%"><img width="70%" src="./.readme/wash.jpg"></td>
+  </tr>
+  <tr>
+    <td style="width:33%"><img width="100%" src="./.readme/no-order.jpg"></td>
+    <td style="width:33%"><img width="100%" src="./.readme/no-message.jpg"></td>
+    <td style="width:33%"><img width="70%" src="./.readme/no-discount.jpg"></td>
+  </tr>
+  <tr>
+    <td style="width:33%"><img width="100%" src="./.readme/discount-exchange.jpg"></td>
+  </tr>
+</table>
 
-  </div>
-</div>
+## 特性
 
-### ✨ 特性
+**⭐ 微信小程序** - 基于微信小程序原生开发技术；
 
-- 基于微信小程序开发技术，采用 TypeScript 工程化开发，提供封装的网络请求及相关工具函数；
+**🧱 页面模板** - 提供面向扫码洗车场景的静态页面，包含地图、订单、洗车、钱包等界面；
 
-- 提供一套基于完整 UI 设计的静态页面，包含地图、订单、消息、洗车、个人中心等模块；
+**💎 产品设计** - 基于成熟的产品设计、拥有统一的 UI 设计及界面风格，可以直接接入逻辑作为实际项目使用；
 
-### 📌 功能页面
+## 功能页面
 
 - [x] 登录/注册页面、微信登录页面；
 
@@ -34,39 +51,9 @@
 
 - [x] 下单、支付、订单、优惠卷等；
 
-### 🌰 界面展示
+## 使用
 
-由于本地静态图片较多，暂时未上线发布，您可以参考图片或者 Clone 代码后运行。
-
-<table>
-    <tr>
-        <td style="width:33%"><img width="100%" src="./.readme/home.jpg"></td>
-        <td style="width:33%"><img width="100%" src="./.readme/submit.jpg"></td>
-        <td style="width:33%"><img width="70%" src="./.readme/mine.jpg"></td>
-    </tr>
-    <tr>
-        <td style="width:33%"><img width="100%" src="./.readme/order.jpg"></td>
-        <td style="width:33%"><img width="100%" src="./.readme/message.jpg"></td>
-        <td style="width:33%"><img width="70%" src="./.readme/discount.jpg"></td>
-    </tr>
-    <tr>
-        <td style="width:33%"><img width="100%" src="./.readme/service.jpg"></td>
-        <td style="width:33%"><img width="100%" src="./.readme/pay.jpg"></td>
-        <td style="width:33%"><img width="70%" src="./.readme/wash.jpg"></td>
-    </tr>
-    <tr>
-        <td style="width:33%"><img width="100%" src="./.readme/no-order.jpg"></td>
-        <td style="width:33%"><img width="100%" src="./.readme/no-message.jpg"></td>
-        <td style="width:33%"><img width="70%" src="./.readme/no-discount.jpg"></td>
-    </tr>
-    <tr>
-        <td style="width:33%"><img width="100%" src="./.readme/discount-exchange.jpg"></td>
-    </tr>
-</table>
-
-### 🌈 使用
-
-#### 1. 初始化
+### 1. 初始化
 
 使用微信开发者工具打开，设置您项目的 appId，具体使用方式，可以参考开发文档： [https://developers.weixin.qq.com/miniprogram/dev/framework/](https://developers.weixin.qq.com/miniprogram/dev/framework/)；
 
@@ -74,7 +61,7 @@
 
 项目依赖 `wx.getLocation` 接口，请自行申请开通；
 
-#### 2. 目录说明
+### 2. 目录说明
 
 ```
 |-- app.json # 页面配置
@@ -98,6 +85,6 @@
 |-- tsconfig.json # ts 配置
 ```
 
-### 🧣 开源协议
+## 开源协议
 
-[MIT licensed](./LICENSE) © 2022-PRESENT Kaivan Wong
+[MIT licensed](./LICENSE) © 2022-PRESENT [Kaivan Wong](https://github.com/kaivanwong)

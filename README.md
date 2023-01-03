@@ -1,4 +1,4 @@
-# 🚙🚙🚙 Wash Car Weapp
+# 🪣 Wash Car Weapp
 
 扫码自助洗车 - 微信小程序，基于微信小程序 + TypeScript 搭建，提供地图定位、订单、消息、洗车、个人中心等页面模板
 

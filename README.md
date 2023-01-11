@@ -4,7 +4,7 @@
 
 # 👋 欢迎使用 @wingscloud/template-wash 前端模板
 
-【前端模板】自助洗车微信小程序，微信小程序原生 + TypeScript 开发。基于成熟的产品设计、UI 设计及界面风格。提供洗车流程、订单、钱包、优惠卷等 16 张全流程页面模板。
+【前端模板】自助洗车微信小程序，基于微信小程序原生 + TypeScript 开发。模板基于成熟的产品设计、UI 设计，同时提供洗车流程、订单、钱包、优惠卷等 16 张全流程页面模板。
 
 <p>
 	<img src="https://img.shields.io/github/v/release/wingscloud/template-wash.svg?color=3DABF5&label=Release"/>

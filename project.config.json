@@ -1,6 +1,6 @@
 {
   "projectname": "@wingscloud/template-wash",
-  "description": "项目配置文件",
+  "description": "【前端模板】自助洗车微信小程序，基于微信小程序原生 + TypeScript 开发。模板基于成熟的产品设计、UI 设计，同时提供洗车流程、订单、钱包、优惠卷等 16 张全流程页面模板。",
   "packOptions": {
     "ignore": [],
     "include": []

@@ -1,11 +1,15 @@
 {
-  "name": "wash-car-weapp",
+  "name": "@wingscloud/template-wash",
   "version": "1.0.4",
-  "description": "扫码自助洗车 - 微信小程序，基于微信小程序 + TypeScript 搭建，提供地图定位、订单、消息、洗车、个人中心等页面模板",
+  "description": "【前端模板】自助洗车微信小程序，微信小程序原生 + TypeScript 开发。基于成熟的产品设计、UI 设计及界面风格。提供洗车流程、订单、钱包、优惠卷等 16 张全流程页面模板。",
+  "author": "Kaivan Wong <kaivanwong@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/wingscloud/template-wash#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wingscloud/rbac-admin-web.git"
+    "url": "git+https://github.com/wingscloud/template-wash.git"
   },
-  "author": "Kaivan Wong",
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/wingscloud/template-wash/issues"
+  }
 }

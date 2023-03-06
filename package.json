@@ -1,7 +1,7 @@
 {
   "name": "@wingscloud/template-wash",
   "version": "1.0.0",
-  "description": "基于微信小程序原生 + TypeScript 的自助洗车开发模板。提供洗车流程、订单、钱包、优惠卷等 16 张全流程页面模板。",
+  "description": "基于微信小程序 + TypeScript 的自助洗车开发模板。提供洗车流程、订单、钱包等 16 张页面模板。",
   "author": "Kaivan Wong <kaivanwong@outlook.com>",
   "license": "MIT",
   "homepage": "https://github.com/wingscloud/template-wash#readme",

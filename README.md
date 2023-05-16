@@ -34,10 +34,10 @@ cd template-wash
 
 <table>
 	<tr>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/home.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/submit.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/mine.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/order.jpg?raw=true" /></td>
+		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/home.jpg?raw=true" /></td>
+		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/submit.jpg?raw=true" /></td>
+		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/mine.jpg?raw=true" /></td>
+		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/order.jpg?raw=true" /></td>
 	</tr>
 	<tr>
 		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/message.jpg?raw=true" /></td>

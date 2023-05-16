@@ -36,7 +36,7 @@ cd template-wash
 	<tr>
 		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/home.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/submit.jpg?raw=true" /></td>
-		<td style="width:24.99%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/mine.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/mine.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/order.jpg?raw=true" /></td>
 	</tr>
 	<tr>

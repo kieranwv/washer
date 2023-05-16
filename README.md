@@ -26,6 +26,7 @@ git clone https://github.com/wingscloud/template-wash.git
 cd template-wash
 
 # 开发
+
 使用 微信开发者工具 IDE 进行微信小程序开发
 ```
 

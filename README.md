@@ -1,8 +1,8 @@
-<p>
-	<img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/wingscloud/banner.svg" />
-</p>
+# Wing Cloud Template Wash
 
-# 项目特点
+🚘 扫码自助洗车微信小程序开发模板，基于微信小程序 + TypeScript 开发。
+
+## 特点
 
 - 基于成熟的产品设计、UI 设计，可以直接作为实际项目使用；
 
@@ -12,65 +12,58 @@
 
 - 基于微信常用 Api 二次封装、网络请求、表单验证等工具函数；
 
-# 快速上手
+## 快速上手
 
-1. 您需要安装 [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)，，以及关于 [微信小程序原生开发](https://developers.weixin.qq.com/doc) 的前置知识。
+> 访问 [官方网站](https://wingscloud.kaivanwong.me) 了解更多。
 
-2. Wings Cloud Template Wash 项目版本更新时，通过 [Github Release](https://github.com/wingscloud/template-wash/releases) 下载相应版本的源码压缩包。
+```sh
+# 拉取最新项目代码
 
-3. 通过下载安装好的微信开发者工具打开项目。
+git clone https://github.com/wingscloud/template-wash.git
 
-4. 运行完成后，您将在微信开发者工具的模拟器中看到如下页面。
+# 进入项目代码目录
 
-# 源码目录结构
+cd template-wash
 
-```
-├── /api                      // 接口管理
-├── /assets               		// 静态资源
-├── /components               // 公共组件
-├── /config                   // 配置            
-├── /libs                     // 插件      
-├── /pages                    // 页面      
-├── /static                   // TS 类型支持
-├── /typeings                 // 全局状态管理
-├── /utils                    // 工具函数
-├── ...
-├── app.json                  // 页面配置
-├── app.scss                  // 主题变量及全局样式
-├── app.ts                    // 入口文件
-├── package.json              // 配置
-└── ts.config.js              // TS 配置
+# 开发
+使用 微信开发者工具 IDE 进行微信小程序开发
 ```
 
-## 界面展示
+## 演示
 
 <table>
 	<tr>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/home.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/submit.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/mine.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/order.jpg?raw=true" /></td>
 	</tr>
 	<tr>
-		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/order.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/message.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/discount.jpg?raw=true" /></td>
-	</tr>
-	<tr>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/service.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/pay.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/wash.jpg?raw=true" /></td>
 	</tr>
 	<tr>
+		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/wash.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/discount-exchange.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/no-order.jpg?raw=true" /></td>
 		<td><img width="100%" src="https://github.com/wingscloud/docs/blob/main/public/template-wash/no-message.jpg?raw=true" /></td>
 	</tr>
 </table>
 
-# 参与共建
+## 参与共建
 
-欢迎提交 PR。
+> 访问 [官方网站](https://wingscloud.kaivanwong.me) 了解更多。
 
-# 开源协议
+1. Fork 该仓库到您的 Github 账号下，并 Clone 到本地。
 
-Wings Cloud 相关开源软件遵循 [Apache 2.0 协议](https://www.apache.org/licenses/LICENSE-2.0.html)，允许商业使用，但务必保留 LICENSE 信息。
+2. 安装项目依赖，Wings Cloud 使用 [pnpm](https://pnpm.io/) 作为默认包管理工具。
+
+3. 项目开发完成后，提交 PR 进行代码合并审核。
+
+## 许可证
+
+软件遵循 [Apache 2.0 协议](https://www.apache.org/licenses/LICENSE-2.0)，在包含 License 情况下免费商业使用。
+
+Wings Cloud 的相关设计资源属 [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nd/4.0/)，不得用于商业行为。

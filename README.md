@@ -34,22 +34,22 @@ cd template-wash
 
 <table>
 	<tr>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/home.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/submit.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/mine.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/order.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/home.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/submit.jpg?raw=true" /></td>
+		<td style="width:24.99%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/mine.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/order.jpg?raw=true" /></td>
 	</tr>
 	<tr>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/message.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/discount.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/service.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/pay.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/message.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/discount.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/service.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/pay.jpg?raw=true" /></td>
 	</tr>
 	<tr>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/wash.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/discount-exchange.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/no-order.jpg?raw=true" /></td>
-		<td style="width:25%"><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/no-message.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/wash.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/discount-exchange.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/no-order.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/no-message.jpg?raw=true" /></td>
 	</tr>
 </table>
 

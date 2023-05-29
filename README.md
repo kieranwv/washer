@@ -1,6 +1,6 @@
 # Wing Cloud Template Wash
 
-🚘 扫码自助洗车微信小程序开发模板，基于微信小程序 + TypeScript 开发。
+扫码自助洗车微信小程序开发模板。
 
 ## 特点
 

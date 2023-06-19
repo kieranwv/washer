@@ -32,21 +32,21 @@ cd wash-car
 
 <table>
 	<tr>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/home.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/submit.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/pay.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/order.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/home.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/submit.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/pay.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/order.jpg?raw=true" /></td>
 	</tr>
 	<tr>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/message.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/discount.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/service.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/no-message.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/message.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/discount.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/service.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/no-message.jpg?raw=true" /></td>
 	</tr>
 	<tr>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/wash.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/discount-exchange.jpg?raw=true" /></td>
-		<td><img width="100%" src="https://github.com/wingscloud/assets/blob/main/packages/assets/template-wash/no-order.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/wash.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/discount-exchange.jpg?raw=true" /></td>
+		<td><img width="100%" src="https://github.com/template-app/wash-car/blob/main/.github/assets/no-order.jpg?raw=true" /></td>
 		<td></td>
 	</tr>
 </table>

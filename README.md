@@ -1,6 +1,6 @@
-# Wing Cloud Template Wash
+# Wash Car
 
-扫码自助洗车微信小程序开发模板。
+面向扫码自助洗车场景的微信小程序，基于微信原生开发 + TypeScript + Sass 开发，基于成熟的产品、UI 设计，提供地图定位、洗车、订单、钱包、优惠卷等 16 张常用页面模板。
 
 ## 特点
 
@@ -14,16 +14,14 @@
 
 ## 快速上手
 
-> 访问 [官方网站](https://wingscloud.kaivanwong.me) 了解更多。
-
 ```sh
 # 拉取最新项目代码
 
-git clone https://github.com/wingscloud/template-wash.git
+git clone https://github.com/template-app/wash-car.git
 
 # 进入项目代码目录
 
-cd template-wash
+cd wash-car
 
 # 开发
 
@@ -55,11 +53,9 @@ cd template-wash
 
 ## 参与共建
 
-> 访问 [官方网站](https://wingscloud.kaivanwong.me) 了解更多。
-
 1. Fork 该仓库到您的 Github 账号下，并 Clone 到本地。
 
-2. 安装项目依赖，Wings Cloud 使用 [pnpm](https://pnpm.io/) 作为默认包管理工具。
+2. 安装项目依赖，使用 [pnpm](https://pnpm.io/) 作为默认包管理工具。
 
 3. 项目开发完成后，提交 PR 进行代码合并审核。
 
@@ -67,4 +63,4 @@ cd template-wash
 
 软件遵循 [Apache 2.0 协议](https://www.apache.org/licenses/LICENSE-2.0)，在包含 License 情况下免费商业使用。
 
-Wings Cloud 的相关设计资源属 [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nd/4.0/)，不得用于商业行为。
+Template App 的相关设计资源属 [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nd/4.0/)，不得用于商业行为。
